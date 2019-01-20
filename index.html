@@ -16,10 +16,16 @@
       width: 100%;
       color: white;
     }
+
+    h6 {
+      font-family: "Arial", Helvetica, sans-serif
+    }
   </style>
 </head>
-<!-- As a heading -->
-<span class="nav navbar-nav mr-auto" style="text-align: right; padding: 10px;"><font color="#B20636 ">866.555.5555</font></span>
+
+
+<!-- heading -->
+<span class="nav navbar-nav mr-auto" style="text-align: right; padding: 10px;"><font color="#B20636 " style=" font-weight: bold;">866.555.5555</font></span>
 
 <!-- jumbotron -->
 <div class="jumbotron jumbotron-fluid">
@@ -34,12 +40,13 @@
 <div class="row">
   <div class="col-8">
     <div class="card-one" style="padding-left: 30px;">
-      <p style="text-align: center;">
+      <p style="text-align: center; font-size: 12px;">
         Dialysis staffing isn't just our top priority it's our only priority. We focus on your needs 100% of our efforts to finding the job that works for you.
       </p>
-      <p style="text-align: center">With you Every Step of the Way<img style="vertical-align:middle" src="assets/check-mark.png" alt="checkmark" width="42" height="42" align="left"></p>
+      <p style=" font-weight: bold;text-align: center;">With you Every Step of the Way<img style="vertical-align:middle" src="assets/check-mark.png" alt="checkmark" width="42" height="42" align="left"></p>
       <hr style="background-color: black;">
       <ul class="list-group ">
+        <li class="list-group-item border-0 ">24-hour access to your recruiter</li>
         <li class="list-group-item border-0 ">Travel allowances and paid housing</li>
         <li class="list-group-item border-0 ">Coverage under our professional liability insurance</li>
         <li class="list-group-item border-0 ">Medical and dental insurance</li>
@@ -48,31 +55,31 @@
 
     </div>
   </div>
-  <div class="col ">
+  <div class="col " style="padding-right: 30px;">
     <div class="card" style="background-color: #acbcbb;">
-      <form class="text-center border border-light p-5">
+      <form class="text-center border border-light p-5" onsubmit="return validateForm()">
         <h6>
               Get the job you want and the benefits you deserve <br />
-              <small>We're commmited to finding you the job that works for you. To get started, simply send us a message using the form below or
-        give us a call. <font color="#B20636 ">866.555.5555</font></small>
+              <p style="font-size: 12px;">We're commmited to finding you the job that works for you. To get started, simply send us a message using the form below or
+        give us a call. <font color="#B20636 " style=" font-weight: bold;">866.555.5555</font></p>
             </h6>
         <div class="form-row mb-4 ">
           <div class="col ">
 
             <!-- First name -->
-            <input type="text " id="defaultRegisterFormFirstName " class="form-control " placeholder="First name ">
+            <input type="text " id="defaultRegisterFormFirstName " class="form-control " placeholder="First name *" required aria-required="true" />
           </div>
           <div class="col ">
             <!-- Last name -->
-            <input type="text " id="defaultRegisterFormLastName " class="form-control " placeholder="Last name ">
+            <input type="text " id="defaultRegisterFormLastName " class="form-control " placeholder="Last name *" required aria-required="true">
           </div>
         </div>
 
         <!-- E-mail -->
-        <input type="email " id="defaultRegisterFormEmail " class="form-control mb-4 " placeholder="E-mail ">
+        <input type="email " id="defaultRegisterFormEmail " class="form-control mb-4 " placeholder="E-mail *" required aria-required="true">
 
         <!-- Phone number -->
-        <input type="text " id="defaultRegisterPhonePassword " class="form-control " placeholder="Phone number " aria-describedby="defaultRegisterFormPhoneHelpBlock ">
+        <input type="text " id="defaultRegisterPhonePassword " class="form-control " placeholder="Phone number *" aria-describedby="defaultRegisterFormPhoneHelpBlock " required aria-required="true">
         <small id="defaultRegisterFormPhoneHelpBlock " class="form-text text-muted mb-4 ">
     </small>
         <!-- Comments -->
@@ -83,7 +90,7 @@
         <!-- Sign up button -->
         <div class="container">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-danger btn-transparent " style="background-color: #acbcbb; color: #B20636; " data-toggle="modal" data-target="#myModal">Submit</button>
+          <button type="submit" class="btn btn-danger btn-transparent " style="background-color: #acbcbb; color: #B20636; " data-toggle="modal" data-target="#myModal">Submit</button>
 
           <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
@@ -113,6 +120,7 @@
 
 <div class="container">
 
+  <!-- Testimonials -->
   <p style="padding: 10px;">Testimonials
     <hr style="background-color: black;">
 </div>
@@ -120,7 +128,7 @@
 <div class="container">
   <div class="card-deck">
     <div class="card text-center">
-      <div class="card-block" style="background-color: #F5F5F5 ">
+      <div class="card-block" style=" background-color: #F5F5F5; box-shadow: inset 8px 0 10px -6px black;">
         <h6 class="card-title" style="font-weight: 200;">"I'm having the best time of my life..."</h6>
         <p class="card-text" style="text-align: right; padding: 10px;">
           - Deborah
@@ -129,7 +137,7 @@
     </div>
 
     <div class="card text-center">
-      <div class="card-block" style="background-color: #F5F5F5 ">
+      <div class="card-block" style=" background-color: #F5F5F5; box-shadow: inset 8px 0 10px -6px black;">
         <h6 class="card-title" style="font-weight: 200;">"I'm a much better nurse..."</h6>
         <p class="card-text" style="text-align: right; padding: 10px;">
           - Allan
@@ -139,8 +147,6 @@
   </div>
 </div>
 <br />
-
-
 
 
 <!-- footer -->
@@ -159,12 +165,34 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+<!-- I feel like I am really close on this form submission modal.
+Not sure what I am missing to prevent the modal from popping up without the form validations.
+-->
+
 <script>
   $('#myForm').on('submit', function(e) {
-    $('#myModal').modal('show');
     e.preventDefault();
+    if ($('#defaultRegisterFormFirstName').val() === '') {
+      alert('First name is required.');
+      return;
+    }
+    if ($('#defaultRegisterFormLastName').val() === '') {
+      alert('Last name is required.');
+      return;
+    }
+    if ($('#defaultRegisterPhonePassword').val() === '') {
+      alert('Phone # is required.');
+      return;
+    }
+    if ($('#defaultRegisterFormEmail').val() === '') {
+      alert('Email is required.');
+      return;
+    }
+    $('#myModal').modal('show');
   });
 </script>
+
 </body>
 
 </html>
