@@ -3,6 +3,10 @@
   height: auto;
 }
 
+.card {
+  padding-left: 20px;
+}
+
 .card-one {
   border: none;
 }
