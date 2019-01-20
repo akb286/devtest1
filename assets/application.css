@@ -23,3 +23,13 @@ h6 {
   background-color: grey;
   color: red;
 }
+
+/* testimonials  */
+
+.content {
+  padding-top: 30px;
+}
+
+.card-title h6 {
+  font-weight: normal;
+}
