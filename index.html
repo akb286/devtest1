@@ -11,14 +11,78 @@
 </head>
 
 <body>
-  <img src="assets/girl-on-phone.jpg" class="img-fluid" alt="header image">
-  <h1>Is this working</h1>
+  <div class="container">
+    <img src="assets/girl-on-phone.jpg" class="img-fluid" alt="header image">
+  </div>
+
+  <!-- Default form register -->
+
+  <div class="row">
+    <div class="col">
+      <div class="card-one">
+        <p style="text-align: center">
+          Dialysis staffing isn't just our top priority it's our only priority. We focus on your needs 100% of our efforts to finding the job that works for you.
+        </p>
+        <p style="text-decoration: underline">With you Every Step of the Way<img style="vertical-align:middle" src="assets/check-mark.png" alt="checkmark" width="42" height="42" align="left"></p>
+        <ul class="list-group">
+          <li class="list-group-item border-0">Travel allowances and paid housing</li>
+          <li class="list-group-item border-0">Coverage under our professional liability insurance</li>
+          <li class="list-group-item border-0">Medical and dental insurance</li>
+          <li class="list-group-item border-0">401(k)retirement plans with match</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: grey ">
+        <form class="text-center border border-light p-5 ">
+          <h6>
+              Get the job you want and the benefits you deserve <br />
+              <small>We're commmited to finding you the job that works for you. To get started, simply send us a message using the form below or
+        give us a call. <font color="red">866.555.5555</font></small>
+            </h6>
+          <div class="form-row mb-4 ">
+            <div class="col ">
+
+              <!-- First name -->
+              <input type="text " id="defaultRegisterFormFirstName " class="form-control " placeholder="First name ">
+            </div>
+            <div class="col ">
+              <!-- Last name -->
+              <input type="text " id="defaultRegisterFormLastName " class="form-control " placeholder="Last name ">
+            </div>
+          </div>
+
+          <!-- E-mail -->
+          <input type="email " id="defaultRegisterFormEmail " class="form-control mb-4 " placeholder="E-mail ">
+
+          <!-- Phone number -->
+          <input type="text " id="defaultRegisterPhonePassword " class="form-control " placeholder="Phone number " aria-describedby="defaultRegisterFormPhoneHelpBlock ">
+          <small id="defaultRegisterFormPhoneHelpBlock " class="form-text text-muted mb-4 ">
+    </small>
+          <!-- Comments -->
+          <div class="form-group ">
+            <textarea class="form-control rounded-0 " id="exampleFormControlTextarea2 " rows="3 " placeholder="Comments "></textarea>
+          </div>
+
+          <!-- Sign up button -->
+          <button class="btn btn-danger btn-transparent" style="background-color: grey;color: red;" type="submit ">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- With you steps -->
+
 
 
   <!-- bootstrap scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 </body>
 
 </html>

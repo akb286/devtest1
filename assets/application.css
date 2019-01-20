@@ -1,0 +1,25 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-one {
+  border: none;
+}
+
+h6 {
+  font-family: "Arial", Helvetica, sans-serif
+}
+
+.center {
+  text-align: center;
+}
+
+.card-grey {
+  background-color: red;
+}
+
+.submit {
+  background-color: grey;
+  color: red;
+}
